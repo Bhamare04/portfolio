@@ -4,120 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kartik Bhamare | Portfolio</title>
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    :root { --accent:#22c55e; }
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;scroll-behavior:smooth}
-    body{background:#0f0f0f;color:#fff;line-height:1.6}
-    a{text-decoration:none;color:var(--accent)}
 
-    nav{position:fixed;top:0;width:100%;background:rgba(15,15,15,.85);backdrop-filter:blur(10px);z-index:100}
-    .nav-inner{max-width:1100px;margin:auto;padding:16px 20px;display:flex;justify-content:space-between;align-items:center}
-    nav a{margin-left:20px;color:#ccc}
-    nav a:hover{color:#fff}
-
-    header{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px}
-    h1{font-size:3rem;font-weight:800}
-    h1 span{color:var(--accent)}
-    p{color:#b3b3b3;margin-top:15px}
-
-    .btns{margin-top:30px}
-    .btn{padding:12px 24px;border-radius:8px;margin:0 8px;border:1px solid var(--accent)}
-    .btn.primary{background:var(--accent);color:#000}
-
-    section{padding:80px 20px;max-width:1100px;margin:auto}
-    h2{font-size:2rem;margin-bottom:20px}
-
-    .skills span{display:inline-block;background:#1f1f1f;padding:10px 16px;border-radius:8px;margin:6px}
-
-    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-    .card{background:#1a1a1a;padding:20px;border-radius:16px;transition:.3s}
-    .card-link{display:block;color:inherit;cursor:pointer;position:relative;z-index:1}
-    .card-link:hover{text-decoration:none}
-    .card:hover{transform:translateY(-6px);box-shadow:0 10px 25px rgba(0,0,0,.5)}
-
-    .socials{display:flex;justify-content:center;gap:25px;margin-top:30px}
-    .socials a{
-      width:90px;
-      height:50px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      border-radius:999px; /* OVAL SHAPE */
-      background:#1f1f1f;
-      font-size:22px;
-      transition:.3s
-    }
-    /* REAL ICON COLORS BY DEFAULT */
-    .socials a[title="Email"]{color:#ea4335;}      /* Gmail Red */
-    .socials a[title="GitHub"]{color:#ffffff;}    /* GitHub White */
-    .socials a[title="LinkedIn"]{color:#0a66c2;}  /* LinkedIn Blue */
-    /* HOVER EFFECT WITH SAME BRAND COLOR */
-    .socials a:hover{
-      transform:translateY(-6px) scale(1.05);
-      box-shadow:0 10px 25px rgba(0,0,0,.5);
-      color:#fff;
-    }
-    .socials a[title="Email"]:hover{background:#ea4335;}      /* Gmail Red */
-    .socials a[title="GitHub"]:hover{background:#6b7280;}     /* GitHub Gray */     /* GitHub Black */
-    .socials a[title="LinkedIn"]:hover{background:#0a66c2;}   /* LinkedIn Blue */   /* LinkedIn Blue */
-
-    footer{text-align:center;padding:40px;color:#777}
-  </style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
   <div id="top"></div>
 
   <!-- NAVBAR -->
   <nav>
     <div class="nav-inner">
-      <strong>Kartik Bhamare</strong>
+      <h3>Kartik</h3>
       <div>
         <a href="#top">Home</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
-    <!-- HERO -->
   <header>
     <div>
-      <img src="profile.jpg" alt="Kartik Bhamare Profile Photo" style="width:160px;height:160px;border-radius:50%;margin-bottom:20px;border:3px solid var(--accent);object-fit:cover;box-shadow:0 10px 30px rgba(0,0,0,0.5);">
+      <img src="profile.jpg" alt="Kartik Bhamare"
+        style="width:160px;height:160px;border-radius:50%;border:3px solid var(--accent);object-fit:cover;box-shadow:0 10px 30px rgba(0,0,0,.5);">
+
       <h1>Hi, I'm <span>Kartik Bhamare</span></h1>
-      <p>I'm a Python Developer passionate about AI, Machine Learning, and Data Science</p>
+      <p>Python Developer passionate about AI, Machine Learning, and Data Science.</p>
+
       <div class="btns">
         <a href="#projects" class="btn primary">Projects</a>
         <a href="#contact" class="btn">Contact</a>
+        <a href="Kartik_Bhamare_Resume.pdf" class="btn" download>Download Resume</a>
       </div>
-      
     </div>
   </header>
 
-  <!-- ABOUT -->
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm a Python Developer passionate about AI, Machine Learning, and Data Science. 
-    </p>
-        <div class="skills">
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
       <span>Python</span>
       <span>NumPy</span>
       <span>Pandas</span>
       <span>Matplotlib</span>
       <span>Seaborn</span>
       <span>Scikit-learn</span>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript(Learning)</span>
-      <span>MongoDB(Basics)</span>
       <span>Git & GitHub</span>
       <span>VS Code</span>
       <span>Google Colab</span>
-
     </div>
   </section>
 
@@ -127,18 +70,22 @@
     <div class="projects">
       <div class="card">
         <h3>Insurance Premium Prediction</h3>
-        <p>Machine learning project to predict insurance premium based on user data using Python and Scikit-learn.</p>
-        <a href="https://github.com/Bhamare04/Data-Science-ML-Project" target="_top" rel="noopener noreferrer" style="margin-top:10px;display:inline-block;">Open on GitHub</a>
+        <p>Machine learning model to predict insurance premium using Python and Scikit-learn.</p>
+        <a href="https://github.com/Bhamare04/Data-Science-ML-Project" target="_top">
+          Open on GitHub
+        </a>
       </div>
+
       <div class="card">
         <h3>Employee Churn Prediction</h3>
-        <p>Predicts whether an employee will leave the company using data analysis and ML models.</p>
-        <span style="color:#999;font-size:14px;">GitHub link coming soon</span>
+        <p>ML model to predict employee attrition. GitHub link coming soon.</p>
+        <span style="color:#999;font-size:14px;">Coming soon</span>
       </div>
+
       <div class="card">
         <h3>Basic ML Model</h3>
-        <p>Implemented a basic machine learning model using Python and Scikit-learn for learning core ML concepts.</p>
-        <span style="color:#999;font-size:14px;">GitHub link coming soon</span>
+        <p>Implemented basic ML algorithms to understand core ML concepts.</p>
+        <span style="color:#999;font-size:14px;">Coming soon</span>
       </div>
     </div>
   </section>
@@ -146,24 +93,25 @@
   <!-- CONTACT -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Let’s connect with me on social platforms</p>
+    <p>Let’s connect</p>
 
     <div class="socials">
-      <!-- Email (direct Gmail compose) -->
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kartikbhamare@gmail.com&su=Portfolio%20Contact" target="_blank" title="Email">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kartikbhamare@gmail.com&su=Portfolio%20Contact"
+         target="_blank" title="Email">
         <i class="fa-solid fa-envelope"></i>
       </a>
-      <!-- GitHub -->
+
       <a href="https://github.com/Bhamare04" target="_blank" title="GitHub">
         <i class="fa-brands fa-github"></i>
       </a>
-      <!-- LinkedIn -->
+
       <a href="https://linkedin.com/in/kartik-bhamare" target="_blank" title="LinkedIn">
         <i class="fa-brands fa-linkedin"></i>
       </a>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     © 2026–Present Kartik Bhamare. All rights reserved.
   </footer>
